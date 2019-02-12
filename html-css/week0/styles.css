@@ -1,0 +1,283 @@
+
+html, body
+{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+nav
+{
+  margin-left:-40px;
+  margin-top:-16px;
+  
+}
+nav a 
+{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-family:Arial;
+  background-color:#00aeef;
+  height:50px;
+  text-decoration:none;
+  text-transform:uppercase;
+  font-weight:bold;
+  color:#fff;
+}
+nav ul
+{
+  list-style:none;
+  display:flex;
+   
+}
+nav a:hover
+{
+  background-color:#fff;
+  color:#000;
+}
+nav ul li
+{
+  position:relative;
+  width:100%;
+  text-align:center;
+}
+nav li:hover .dropdown-1 li
+{
+ top:0;
+  display:block;
+  margin-left:-40px;
+}
+nav ul li ul li
+{
+  display:none;
+  position:relative;
+  border-bottom:1px solid grey;
+}
+.dropdown-1 
+{
+  position:absolute;
+  display:flex;
+  flex-direction:column;
+  width:100%;
+}
+/*body
+{
+  width:100%;
+  margin:auto;
+}
+.main
+{
+  
+  margin:0 100px;
+}
+header
+{
+  background-color:#00aeef;
+  width:100%;
+  /*top:0;
+  position:fixed;*/
+/*}
+.logo
+{
+  float:left;
+ font-family: 'Lobster', cursive;
+  font-size:10px;
+}
+a
+{
+  text-decoration:none;
+  color:#fff;
+}
+li
+{
+  display:inline-block;
+  list-style:none;
+  float:left;
+  margin-left:55px;
+  padding-top:7px;
+  font-family:Arial;
+    font-weight:bold;
+  
+}
+li a:hover {
+  color:black;
+}
+/*nav
+{
+  float:right;
+}*/
+/*End of navbar*/
+
+.shopping-img
+{
+  width:100%;
+  height:500px;
+  margin-top:-16px;
+}
+
+.section
+{
+  margin:50px;
+
+  padding:0;
+  
+}
+#women
+{
+  height:400px;
+  margin-top:50px;
+  overflow:hidden;
+}
+#women img
+{
+  float:left;
+  /*width:600px;*/
+  margin-right:50px;
+  /*height:400px;*/
+ 
+}
+#women .info
+{
+ line-height:1.5em;
+  padding:50px;
+  font-style:italic;
+  font-size:18px;
+  
+}
+button
+{
+  width:100px;
+  height:30px;
+  font-size:17px;
+  background-color:#00aeef;
+  color:white;
+  font-family:Aeial;
+ }
+/*End of Women section*/
+#men
+{
+  margin-bottom:50px;
+  height:400px;
+  margin-top:50px;
+  overflow:hidden;
+
+}
+#men img
+{
+  float:left;
+  width:600px;
+  height:400px;
+  margin-right:50px;
+  clear:both;
+}
+#men .info
+{
+ padding:50px;
+  line-height:1.5em;
+  font-style:italic;
+  font-size:18px;
+ 
+}
+/*End of Men section*/
+#kids
+{
+ margin-bottom:50px;
+ margin-top:50px;
+ height:400px;
+ overflow:hidden;
+}
+#kids img
+{
+  float:left;
+  width:600px;
+  height:400px;
+  margin-right:50px;
+  margin-bottom:50px;
+  clear:both;
+}
+#kids .info
+{
+ padding:50px;
+  line-height:1.5em;
+  font-style:italic;
+  font-size:18px;
+}
+/*End of Kids Section*/
+footer
+{
+  background-color:black;
+  color:white;
+  padding:30px;
+  height:200px;
+ }
+
+#about-us
+{
+  float:left;
+  width:300px;
+  margin-left:200px;
+}
+.icon
+{
+  padding:5px;
+  margin-right:5px;
+}
+.facebook
+{
+  width:20px;
+  background-color:white;
+  
+}
+.twitter
+{
+  width:20px;
+  background-color:white;
+  
+}
+.linkedIn
+{
+  width:20px;
+  background-color:white;
+ 
+}
+.github
+{
+  width:20px;
+  background-color:white;
+  
+}
+#contact-us
+{
+  float:right;
+  line-height:2.0em;
+  margin-right:200px;
+}
+.email
+{
+  width:20px;
+  background-color:white;
+  margin-right:10px;
+  
+}
+.phone
+{
+  width:20px;
+  background-color:white;
+  margin-right:10px;
+  
+}
+.map
+{
+  width:20px;
+  background-color:white;
+  margin-right:10px;
+  
+}
+
+/*End of footer*/
+
+
+
+
+
+
