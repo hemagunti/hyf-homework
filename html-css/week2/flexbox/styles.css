@@ -128,12 +128,20 @@ nav a{
     flex-direction: column;
     align-items: start;
     }
+     nav li{
+        padding:10px 0;
+    }
 }
 
   /*Image section*/  
 .image img{
     height:500px;
     width:100%;
+}
+@media (max-width: 650px) {
+.image img {
+    height:200px;
+}
 }
 /* section*/
 
