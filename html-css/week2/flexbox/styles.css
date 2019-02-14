@@ -264,8 +264,9 @@ h1.footer-text
    
 }
 .about-page p{
-    line-height:1.0;
+    line-height:1.5;
     font-size:1.2em;
+   
 }
 /* footer: Responsive for mobile screens */
 @media (max-width: 650px) {
