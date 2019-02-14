@@ -291,3 +291,8 @@ h1.footer-text
       padding-top:20px;
   }
 }
+@media (max-width: 650px) {
+.navigation{
+    display:none;
+}
+}
