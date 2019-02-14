@@ -28,11 +28,17 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 display: block;
 }
+
 body {
-line-height: 1;
+width:100%;
+line-height:1.5;
+font-family: 'Lato', sans-serif;
 }
 ol, ul {
 list-style: none;
+}
+a{
+    text-decoration:none; 
 }
 blockquote, q {
 quotes: none;
@@ -45,4 +51,234 @@ content: none;
 table {
 border-collapse: collapse;
 border-spacing: 0;
+}
+/*centering the webpage*/
+.container
+{
+width:75%;
+margin:0 auto;
+}
+
+/*Header*/
+header{
+    background-color:#F5F5F5;
+     border-bottom:2px solid #eee;
+   }
+.title
+   {
+       padding:50px 0px;
+       display:flex;
+       flex-direction:column;
+       align-items:flex-start;
+   }
+.title h1
+   {
+    text-transform:uppercase;
+    font-weight:600;
+    font-size:2em;
+  }
+.title p
+{
+    opacity:0.5;
+   
+}
+/* Responsive for mobile screens */
+@media (max-width: 650px) {
+    .title h1{
+  margin-top: 10px;
+  width: 100%;
+ font-size:1em;
+ 
+  }
+}
+/*Navbar*/
+nav{
+    font-weight:400;
+    font-size:1em;
+}
+nav ul{
+    display:flex;
+    justify-content: flex-start;
+}
+nav li
+{
+    padding:20px 0px;
+    margin-right:40px;
+    margin-left:0;
+    
+}
+.list-item li:nth-child(2) 
+a{
+    color:#808080 ;
+  }
+nav a{
+   color:#000;
+  }
+  nav a:hover{
+      background-color:#eee;
+      padding:20px 0px;
+     
+  }
+  /* Responsive for navbar in mobile screens*/
+  @media (max-width: 650px) {
+      nav ul  {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    }
+}
+
+  /*Image section*/  
+.image img{
+    height:500px;
+    width:100%;
+}
+/* section*/
+
+.info-page
+{
+    display:flex;
+    margin:30px 0;
+}
+.tools-page
+{
+    display:flex;
+    margin:30px 0;
+}
+.sub-text{
+   flex:2;
+  margin-right:50px;
+}
+.sub-text h1{
+    text-transform:uppercase;
+    font-weight:600;
+    font-size:1.2em;
+}
+.sub-text p
+{
+    opacity:0.5;
+    padding-top:20px;
+    line-height:1.0;
+    font-size:14px;
+    
+}
+/*Information page: Responsive for mobile screens */
+@media (max-width: 650px) {
+    .sub-text{
+    width: 100%;
+    margin-top:20px;
+    padding:0;
+    }
+    .sub-text h1{
+        font-size:1em;
+    }
+}
+@media (max-width: 650px) {
+    .info-page{
+    display:flex;
+    flex-direction: column;
+    align-items:flex-start;
+  }
+}
+.grid-text
+{
+     flex:3;
+    
+}
+.grid-text h1{
+    text-transform:uppercase;
+    font-weight:600;
+    font-size:1.6em;
+}
+.grid-text p{
+    opacity:0.5;
+    padding-top:20px;
+}
+.grid-text ul{
+    display:flex;
+    justify-content:space-between;
+    padding:20px 0px;
+   
+}
+.grid-text li img{
+width:100px;
+height:100px;
+}
+/* servicces page : Responsive for mobile screens */
+@media (max-width: 650px) {
+    .tools-page{
+    display:flex;
+    flex-direction: column;
+    align-items:flex-start;
+  }
+}
+@media (max-width: 650px) {
+    .grid-text{
+    width: 100%;
+    text-align:start;
+    padding:0;
+    margin-top:20px;
+    }
+    .grid-text li img {
+        width:75%; 
+        height:75%;
+    }
+    .grid-text h1{
+        font-size:1.2em;
+    }
+
+    }
+
+/* footer*/
+footer{
+    background-color:rgb(83, 7, 184);
+    color:#fff;
+}
+.footer-grid
+{
+    display:flex;
+   justify-content:space-between;
+   padding-top:30px;
+}
+h1.footer-text 
+{
+    text-transform:uppercase;
+    font-weight:500;
+    font-size:1.5em;
+}
+h1.footer-text
+{
+    text-transform:uppercase;
+    font-weight:600;
+    font-size:1.4em;
+    padding-bottom:30px;
+}
+.footer-grid li{
+    line-height:1.0;
+    font-size:1.2em;
+   
+    line-height: 50px;
+    border-bottom:1px solid rgb(95, 85, 165);
+   
+}
+.about-page p{
+    line-height:1.0;
+    font-size:1.2em;
+}
+/* footer: Responsive for mobile screens */
+@media (max-width: 650px) {
+    .footer-grid  {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  
+  }
+  h1.footer-text
+  {
+      padding-top:20px;
+  }
 }
