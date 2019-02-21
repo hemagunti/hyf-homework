@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Form-Tailer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/styles/reset.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/styles/main.css" />
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <main class="page__main">
+       <header>
+            <nav class="nav">
+                <div class="logo"><img src="assets/img/logo.png" alt="logo"></div>
+                <ul class="navigation">
+                        <a href="form1.html"><li>Profile</li></a>
+                        <a href="form2.html"><li>Signup</li></a>
+                        <a href="form3.html"> <li>Shopping Cart</li></a>
+                        <a href="form4.html"> <li>Payment</li></a>
+                </ul>
+            </nav>
+        </header>
+        <section class="form-text">
+            <h1>Sign up to yourcustomtailor.com</h1>
+            <p>we can't wait to help you improve your life-style and again attension from people arounf you!</p>
+            <p>Sign up below to save up to 70% on apparel,handbags and cosmetics. Our agents are busy picking the best offers
+                that match your preferences and style. Every week we will send you a hand-picked selection - we just need
+                to know a few details about your first...</p>
+            <h2>Step 1/4 - tell us who you are?</h2>
+            <div class="progress">
+                <span style="width: 20%"></span>
+            </div>
+            <p>Nice to meet you.Let's spend a minute to get to know each other? Please enter the following:</p>
+        </section>
+
+        <!--End of  Signup form-text-->
+
+        <section class="signup-form">
+            <form action="/signup" method="post">
+                <div class="form__box">
+                    <label for="first-name">
+                        <span>First name* </span>
+                    </label>
+                    <input type="text" class="input-field" name="first-name" required pattern="[A-Za-z]{3}" />
+                    <label for="last-name">
+                        <span>Last name*</span>
+                    </label>
+                    <input type="text" class="input-field" name="last-name" required pattern="[A-Za-z]{3}" />
+                </div>
+                <div class="form__box">
+                    <label for="country">
+                        <span>Country</span>
+                    </label>
+                    <select name="country" class="input-field">
+                        <option value="IND">India</option>
+                        <option value="AFG">Afghanistan</option>
+                        <option value="ALA">Åland Islands</option>
+                        <option value="ALB">Albania</option>
+                        <option value="DZA">Algeria</option>
+                        <option value="ASM">American Samoa</option>
+                        <option value="AND">Andorra</option>
+                        <option value="AGO">Angola</option>
+                        <option value="AIA">Anguilla</option>
+                        <option value="ATA">Antarctica</option>
+                        <option value="ATG">Antigua and Barbuda</option>
+                        <option value="ARG">Argentina</option>
+                        <option value="ARM">Armenia</option>
+                        <option value="ABW">Aruba</option>
+                        <option value="AUS">Australia</option>
+                        <option value="AUT">Austria</option>
+                    </select>
+                </div>
+                <div class="form__box">
+                    <label for="address">
+                        <span>Street address* </span>
+                    </label>
+                    <input type="text" class="input-field" name="address" value="" required minlength="3" maxlength="12" />
+
+                    <label for="postcode">
+                        <span>Post code*</span>
+                    </label>
+                    <input type="text" class="input-field" name="postcode" value="" required minlength="4" maxlength="4" />
+                </div>
+                <div class="form__box profile-desc">
+                    <label for="field5">
+                        <span> Profile description</span><br>
+                        Please provide a short desciption of yourself to be displayed on social community pages.
+                    </label>
+                    <textarea name="field5" class="textarea-field" checked maxlength="500" rows="5"></textarea>
+                </div>
+                <p class="sub-text">Use the same address for billing and shipping? Unchech below to fill out a seperateshipping address.</p>
+
+                <label for="toggle">
+                    <span>Shipping address</span>
+                </label>
+
+                <input type="checkbox" id="toggle" name="toggle" checked>
+                <br>
+
+               <div class="btn">
+                <a href="form2.html"> Next step</a>
+            </div>
+
+                <!--End of Signup-form-->
+
+                <div class="form-toggle">
+                   
+                    <div class="form__box">
+                        <label for="first-name">
+                            <span>First name* </span>
+                        </label>
+                        <input type="text" class="input-field" name="first-name" />
+
+                        <label for="last-name">
+                            <span>Last name*</span>
+                        </label>
+                        <input type="text" class="input-field" name="last-name" />
+                    </div>
+                    <div class="form__box">
+                        <label for="country">
+                            <span>Country</span>
+                        </label>
+                        <select name="country" class="input-field">
+                            <option value="IND">India</option>
+                            <option value="AFG">Afghanistan</option>
+                            <option value="ALA">Åland Islands</option>
+                            <option value="ALB">Albania</option>
+                            <option value="DZA">Algeria</option>
+                            <option value="ASM">American Samoa</option>
+                            <option value="AND">Andorra</option>
+                            <option value="AGO">Angola</option>
+                            <option value="AIA">Anguilla</option>
+                            <option value="ATA">Antarctica</option>
+                            <option value="ATG">Antigua and Barbuda</option>
+                            <option value="ARG">Argentina</option>
+                            <option value="ARM">Armenia</option>
+                            <option value="ABW">Aruba</option>
+                            <option value="AUS">Australia</option>
+                            <option value="AUT">Austria</option>
+                        </select>
+                    </div>
+                    <div class="form__box">
+                        <label for="address">
+                            <span>Street address* </span>
+                        </label>
+                        <input type="text" class="input-field" name="address" value="" required minlength="3" maxlength="12" />
+    
+                        <label for="postcode">
+                            <span>Post code*</span>
+                        </label>
+                        <input type="text" class="input-field" name="postcode" value="" required minlength="4" maxlength="4" />
+                    </div>
+                    <div class="form__box">
+                        <label for="field5">
+                            <span> Profile description</span>
+                            Please provide a short desciption of yourself to be displayed on social community pages.
+                        </label>
+                        <textarea name="field5" class="textarea-field" maxlength="500" rows="5"></textarea>
+                    </div>
+                <!--End of Toggle-form-->
+        </div>
+
+        </form>
+        </section>
+    </main>
+</body>
+
+</html>

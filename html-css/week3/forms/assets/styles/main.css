@@ -1,0 +1,264 @@
+body{
+    font-family:sans-serif;
+    background-color:#F0F0F0;
+}
+:root{
+    --grey:rgb(116, 116, 121);
+    --light-grey:#F0F0F0;
+    --grey-border:#A9A9A9;
+    --background-grey:#ccc;
+    --white:#fff;
+    --black:#000;
+}
+ main
+{   background-color:var(--white);
+    margin:0 auto;
+    height:auto;
+    width:70%;
+    padding:2em;
+    border:2px solid #eee;
+    border-radius:20px;
+    box-shadow:5px 5px var(--grey);
+    position:relative;
+}
+.nav
+{
+    width:100%;
+   font-size:1em;
+   margin-bottom:20px;
+}
+.logo img{
+    width:36px;
+    height:36px;
+}
+.logo
+{
+   background-color:var(--background-grey);
+   padding:10px;
+   float:left;
+    border:1px solid var(--grey-border);
+}
+.navigation a
+{
+    text-decoration:none;
+    color:#000;
+}
+.navigation a:hover{
+    color:#fff;
+}
+.navigation li{
+    font-weight:500;
+    font-size:1.2em;
+}
+.navigation
+{
+    /*width:30%;*/
+    height:19px;
+    background-color:var(--background-grey);
+    padding:20px;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    flex-wrap:wrap;
+    /*float:right;
+    /*text-align:center;*/
+    border:1px solid var(--grey-border);
+}
+/*END of navigation*/
+.form__box
+{
+    display:flex;
+    flex-direction: row;
+    margin-bottom:5px;
+}
+.form__box label{
+    flex-basis:9rem;
+    flex-grow:0;
+    flex-shrink:0;
+   
+}
+.form__box input,
+.form__box textarea{
+    flex-grow:1;
+    flex-basis:0;
+    flex-shrink:1;
+}
+.form-text
+{
+    clear:both;
+    
+}
+.form-text h1
+{
+    font-size:2em;
+    font-weight:500;
+    margin-bottom:1em;
+   
+}
+.form-text p{
+    font-size:1em;
+    width:90%;
+    line-height:1.5;
+   
+}
+.form-text p span{
+    display:block;
+    margin:2em 0 2em 0;
+}
+.form-text h2{
+    font-size:1.5em;
+    font-weight:500;
+    margin-bottom:1em;
+    margin-top:1em;
+}
+/*progress bar*/
+.progress{
+height: 20px; 
+border:2px solid #ccc;
+background: var(--white);
+padding: 10px;
+margin-bottom:20px;
+}
+.progress > span {
+    display: block;
+    height: 100%;
+    background-color: rgb(87, 167, 233);
+ }
+input[type="text"]
+{
+    padding:10px;
+    width:20%;
+    
+}
+/*Form toggle*/
+
+input[type=checkbox]:checked ~ 
+.form-toggle{
+    opacity:0;
+    height:0;
+    display:none;
+}
+.form-toggle{
+    
+    height: 350px;
+    padding: 16px;
+    display: block;
+    clear:both;
+}
+input[type=checkbox]:checked ~ 
+.form__box textarea{
+    display:none;
+}
+/*input[type=checkbox]:checked ~ 
+.profile-desc
+{
+    display:none;
+}*/
+
+/*styling form*/
+p.sub-text
+{
+    font-size:1.3em;
+    margin-bottom:35px;
+}
+.signup-form{
+    max-width: 90%;
+    height:auto;
+	margin-top:1em;
+	font: 13px Arial, Helvetica, sans-serif;
+}
+.signup-form label > span{
+    font-weight: bold;
+    font-size:1.3em;
+    text-align:right;
+    width:30%;
+	/*margin-right: 30px;*/
+}
+.input-field{
+    width: 30%;
+    padding:10px;
+    margin-bottom:20px;	
+    margin-right:20px;
+   }
+.textarea-field{
+	height:100px;
+    width: 55%;
+    margin-top:10px;
+}
+.btn a
+ {
+    display:block;
+    width:100px;
+    text-decoration: none;
+	border:1px solid grey;
+    padding:20px;
+	background: var(--background-grey);
+	color: var(--black);
+    font-size:1.5em;
+    position:absolute;
+    right:20px;
+    bottom:20px;
+   }
+.btn a:hover{
+	background: var(--black);
+	color: var(--white);
+}
+input[type=radio]
+{
+   margin-right:8em;
+    outline:2px solid var(--background-grey);
+}
+.img-container
+{
+width: 100%;
+margin-bottom:60px;
+}
+.img-container img {
+    width:200px;
+    height:200px;
+    margin:10px;
+  } 
+.box-item
+ { 
+     display:flex;
+     flex-flow:row wrap;
+     justify-content:flex-start;
+     max-width:100%;
+ }
+.box-item label
+{
+ margin-right:120px;
+ margin-bottom:30px;
+ display:table;
+ flex-basis:10em;
+ padding:20px;
+}
+.card-text
+{
+    width:70%;
+    margin:0 auto;
+    background-color:#F0F0F0;
+    padding:10px;
+    border-radius:50px;
+    color:#000;
+    text-align:center;
+}
+.card-text h1{
+    font-size:2em;
+    font-weight:600;
+   text-shadow:5px 5px var(--light-grey);
+   padding-top:100px;
+}
+.box-field
+{
+    max-width:60px;
+    padding:10px;
+    margin-bottom:20px;
+}
+.name-field
+{
+    max-width:30%;
+    padding:10px;
+    margin-bottom:20px;
+    margin-right:20px;
+}

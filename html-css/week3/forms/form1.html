@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+        Signup-form-2
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/styles/reset.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/styles/main.css" />
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <main class="page__main">
+            <header>
+                    <nav class="nav">
+                        <div class="logo"><img src="assets/img/logo.png" alt="logo"></div>
+                        <ul class="navigation">
+                                <a href="form1.html"><li>Profile</li></a>
+                                <a href="form2.html"><li>Signup</li></a>
+                                <a href="form3.html"> <li>Shopping Cart</li></a>
+                                <a href="form4.html"> <li>Payment</li></a>
+                            </ul>
+                    </nav>
+                </header>
+        <div class="form-text">
+                <h1>Sign up to yourcustomtailor.com</h1>
+            <h2>Step 2/4 - how can we reach you?</h2>
+            <div class="progress">
+                <span style="width: 40%"></span>
+            </div>
+            <p>We will probably need to stay in touch somehow. Let us know how we can reach you?</p>
+        </div>
+        <div class="signup-form">
+            <form action="signup" method="post">
+                <div class="form__box">
+                    <label for="mail">
+                        <span>Email*</span>
+                    </label>
+                    <input type="email" name="mail" class="input-field" pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-
+                    \x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-
+                    \x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c
+                    [\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b
+                    ([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e
+                    \x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*$">
+
+                    <label for="number">
+                        <span>Phone</span>
+                    </label>
+                    <input type="number" min="3" max="42" class="input-field" pattern="[-+]?[0-9]">
+                </div>
+                <div class="form__box">
+                    <label for="password">
+                        <span>Password*</span>
+                    </label>
+                    <input type="password" name="password" class="name-field" required minlength="10" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
+                        title="Please include at least 1 uppercase character, 1 lowercase character, and 1 number.">
+                </div>
+                <div class="form__box">
+                    <label for="re-password">
+                        <span>Re-enter Password*</span>
+                    </label>
+                    <input type="password" name="re-password" class="name-field" required minlength="10" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
+                        title="Please include at least 1 uppercase character, 1 lowercase character, and 1 number.">
+                </div>
+                <p>I want to sign up for the news letter</p>
+                <br>
+                <div>
+                    <label for="radio">
+                        <span>Weekely news</span>
+                    </label>
+                    <input type="radio" name="radio"  class="radio" checked>
+                    <label for="radio">
+                        <span>Monthly news</span>
+                    </label>
+                    <input type="radio" name="radio">
+                    <label for="radio">
+                        <span>Dont send me any news</span>
+                    </label>
+                    <input type="radio" name="radio">
+                </div>
+                <div class="btn">
+                <a href="form3.html"> Next step</a>
+</div>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>

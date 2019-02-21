@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/styles/reset.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/styles/main.css" />
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <main class="page__main">
+            <header>
+                    <nav class="nav">
+                        <div class="logo">
+                            <img src="assets/img/logo.png" alt="logo">
+                        </div>
+                        <ul class="navigation">
+                                <a href="form1.html"><li>Profile</li></a>
+                                <a href="form2.html"><li>Signup</li></a>
+                                <a href="form3.html"> <li>Shopping Cart</li></a>
+                                <a href="form4.html"> <li>Payment</li></a>
+                            </ul>
+                    </nav>
+                </header>
+        <div class="form-text">
+            <h1>Sign up to yourcustomtailor.com</h1>
+            <h2>Step 4/4 - time to learn about your preferences?</h2>
+            <div class="progress">
+                <span style="width: 80%"></span>
+            </div>
+            <p>what kind of items are you interested in offers on?</p>
+        </div>
+        <div class="signup-form">
+            <form action="signup" method="post">
+                <div class="form__box">
+                    <label for="name-card">
+                        <span>Name on card </span>
+                    </label>
+                    <input type="text" class="name-field" name="name-card" required pattern="[A-Za-z]{3}" />
+                </div>
+                <div class="form__box">
+                    <label for="card-type">
+                        <span>Card type</span>
+                    </label>
+                    <select name="card-type" class="input-field">
+                        <option value="IND">Dankort</option>
+                        <option value="AFG">Mastercard</option>
+                        <option value="AFG">Visa</option>
+                    </select>
+                </div>
+                <div class="form__box">
+                    <label for="number">
+                        <span>Credit card number</span>
+                    </label>
+                    <input type="number" min="3" max="42" class="name-field" pattern="[3-9]|[1-3][0-9]|4[0-2]">
+                    <label for="name-card">
+                        <span>First name</span>
+                    </label>
+                    <input type="text" class="name-field" name="name-card" required pattern="[A-Za-z]{3}" />
+                </div>
+                <div class="form__box">
+                    <label for="month">
+                        <span>Expiry month</span>
+                    </label>
+                    <input type="month" name="month" class="box-field">
+                    <label for="date">
+                        <span>Expiry Date</span>
+                    </label>
+                    <input type="date" name="date" class="box-field">
+
+                </div>
+                <div class="form__box">
+                    <label for="ccv">
+                        <span>CCV</span>
+                    </label>
+                    <input type="number" name="ccv" class="box-field">
+                </div>
+                <div class="btn">
+                <a href="form5.html"> Next step</a>
+                </div>
+
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
