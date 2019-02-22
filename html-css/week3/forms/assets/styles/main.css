@@ -214,8 +214,9 @@ width: 100%;
 margin-bottom:60px;
 }
 .img-container img {
-    width:200px;
-    height:200px;
+   max-width:200px;
+    width:100%;
+    height:auto;
     margin:10px;
   } 
 .box-item
