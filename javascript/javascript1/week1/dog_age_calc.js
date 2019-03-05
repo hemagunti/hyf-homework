@@ -4,7 +4,7 @@ let dogYearFuture = 2045;
 let dogYear = dogYearFuture - dogYearOfBirth;
 let humanYear = dogYear * 7;
 /*Declaring variable with Boolean type*/
-let shouldShowResultInDogYears = false;
+let shouldShowResultInDogYears = true;
 
 /*checking if dogs age is in dog age or in humans age*/
  if(shouldShowResultInDogYears === true)
