@@ -7,8 +7,12 @@ let humanYear = dogYear * 7;
 let shouldShowResultInDogYears = true;
 
 /*checking if dogs age is in dog age or in humans age*/
- if(shouldShowResultInDogYears === true)
+ if(shouldShowResultInDogYears)
+ {
     console.log("your dog will be" + " "+ dogYear +" "+ "dog years old in" + " "+ dogYearFuture);
+ }
     else
+    {
     console.log("your dog will be" + " "+ humanYear +" "+ "human years old in" + " "+ dogYearFuture);
+    }
  
