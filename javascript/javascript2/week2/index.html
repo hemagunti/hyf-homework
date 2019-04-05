@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    #map {
+        height: 100%;
+      }
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+</head>
+<body>
+    <button id="btn">click</button>
+    <!--Geo location -->
+    <p>Click the button to get your coordinates.</p>
+    <button onclick="getLocation()">Try It</button>
+    <p id="demo"></p>
+    <div id="map"></div>
+    <p ondblclick="doubleClick()">Double-click this paragraph to trigger a function.</p>
+    <p id="double-click"></p>
+    <script src="warmup.js"></script>
+    <script src="func_As_var.js"></script>
+    <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8tg5nzkj4qH0BO2YfiFtpc0mnHIA5SHM&callback=initMap">
+</script>
+</body>
+</html>
