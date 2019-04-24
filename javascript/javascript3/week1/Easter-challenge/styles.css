@@ -10,6 +10,12 @@ body {
   font-family: 'Roboto Slab', serif;
  /*font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;*/
 }
+@media only screen and (max-width: 667px){
+    html,body{
+        min-height:100%;
+       
+    }
+}
 .square-container {
     min-height: 80%;
     background-color: rgba(255,255,255,0.5);
@@ -28,11 +34,16 @@ body {
 {
     .square-container{
         height:100%;
+        width:100%;
+    }
+}@media only screen and (max-width: 667px)
+{
+    .square-container{
+        min-height:90%;
+        
     }
 }
-.left-section {
- background-color:red;
-}
+
 .title{
     font-size: 2.5em;
     text-align: center;
