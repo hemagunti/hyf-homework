@@ -1,0 +1,120 @@
+
+html,
+body {
+    height: 100%;
+  background: url('holi-img.jpeg');
+  background-repeat: no-repeat,repeat;
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+  font-family: 'Roboto Slab', serif;
+ /*font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;*/
+}
+.square-container {
+    min-height: 80%;
+    background-color: rgba(255,255,255,0.5);
+    width: 60%;
+    margin:0 auto;
+    padding:20px;
+    border:1px solid #08038C;
+    box-shadow:0 0 8px 3px #fff;
+    border-radius:50px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+@media only screen and (max-width: 768px)
+{
+    .square-container{
+        height:100%;
+    }
+}
+.left-section {
+ background-color:red;
+}
+.title{
+    font-size: 2.5em;
+    text-align: center;
+    background: -webkit-linear-gradient(rgb(67, 69, 204), rgb(38, 192, 102));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+   }
+.question{
+    padding:5px;
+    font-size:1em;
+    background:rgb(64, 120, 241);
+    border-radius : 10px;
+    color:#f6f6f6;
+    }
+.option{
+    margin-right:20px;
+  }
+
+#quiz
+{
+    width : 50%;
+    float:left;
+    box-sizing: border-box;
+    padding:20px; 
+    height:100%;
+   font-weight:700;
+   box-sizing: border-box;
+}
+@media only screen and (max-width: 600px) {
+#quiz{
+    width:100%;
+}
+}
+#btn
+{
+    background-color:green;
+    padding:10px;
+    margin-top :15px;
+}
+.submit{
+    border:none;
+    font-size:1em ;
+    background:rgba(255,255,255,0.5);
+    width:30%;
+    cursor:pointer;
+    border-radius:20px;
+    margin:10px;
+}
+.submit:hover{
+    background:rgb(64, 120, 241);
+    color:#f6f6f6;
+}
+.after-submit
+{
+    visibility: hidden;
+    width :50%;
+    float:left;
+    padding: 20px;
+    box-sizing: border-box;
+  height:100%;
+    font-weight:700;
+}
+@media only screen and (max-width: 600px) {
+    .after-submit{
+        width:100%;
+    }
+}
+.quantity
+{
+    font-family: 'Lobster', cursive;
+color:rgb(2, 7, 15);
+font-size:2em;
+}
+.msg
+{
+    font-family: 'Lobster', cursive;
+    color:rgb(9, 23, 29);
+    font-size:2em;
+    text-align: center;
+}
+#picture
+{
+    width:85%;
+    height: 250px;
+}
