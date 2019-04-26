@@ -7,35 +7,80 @@ body{
    font-family:"Palatino Linotype","Book Antiqua",Palatino,serif;
    /*min-height: 500px;*/
 }
+h1{
+    font-family: 'Gugi', cursive;
+    font-size:3em;
+}
+@media only screen and (max-width: 736px){
+    h1{
+font-size:2em;
+    }
+}
+@media only screen and (max-width: 568px){
+h1{
+    font-size:1.5em;
+}
+}
+.container
+{
+   
+    width:50%;
+    margin:0 auto;
+    text-align: center;
+    border-radius: 10px;
+  padding:5px;
+}
 #weatherContainer
 {
-    background-color: rgba(0, 0, 0, 0.25);
+    visibility: hidden;
+    background-color: rgb(133, 193, 241);
     padding:40px;
-    position:absolute; /* auto width & height*/
-    top:70px;
-    border-radius: 10px;
-    box-shadow: 1px 1px 1px grey;
+    position:absolute; /* auto width & height
+    /*top:70px;*/
+    top:55%;
+    left:50%;
+    transform: translate(-50%, -50%);
+  
+  
     /*visibility: hidden;*/
+}
+@media only screen and (max-width: 768px){
+    #weatherContainer{
+        padding:0px;
+        margin-top:20px;
+    }
+}
+@media only screen and (max-width: 568px){
+    #weatherContainer{
+        padding:0px;
+        margin-top:50px;
+    }
 }
 #weatherContainer h1{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 3em;
 }
-#searchContainer
+/*#searchContainer
 {
-    padding : 15px;
-    position:absolute;
+  background-color: rgb(133, 193, 241);
+  
+    /*position:absolute;
+    top:10%;
+    left:50%;
+    transform: translate(-50%, -50%);*/
     /*top:0;
     right:0;*/
-}
+/*}*/
 #searchContainer input{
     width : 200px;
+    border:2px solid rgb(133, 193, 241);
+    border-radius: 5px;
     /*margin-left:20px;*/
 }
 #searchContainer button 
 {
     width : 100px;
-    background-color:rgb(1,159,190);
+    background-color:rgb(133, 193, 241);
 }
 .searchControl
 {
@@ -53,12 +98,19 @@ body{
 #weatherDesc
 {
     font-size: 28px;
-    vertical-align: 50%;
+    margin-left:20px;
+    vertical-align: 130%;
+    margin-right:20px;
 }
 #temp
 {
     font-size: 35px;
-    vertical-align: 40%;
+    vertical-align:100%;
+}
+#img1
+{
+    width:100px;
+    height:100px;
 }
 .bottom-details
 {
