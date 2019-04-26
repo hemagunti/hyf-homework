@@ -9,7 +9,7 @@ btn.addEventListener('click', function () {
         return false;
     }
     document.querySelector('.display-gif').innerHTML = "";
-    fetch('http://api.giphy.com/v1/gifs/search?q=' + search + '&api_key=8wqf9mmnXHgAQr5Og1s7PjeyShYg8OGx')
+    fetch('https://api.giphy.com/v1/gifs/search?q=' + search + '&api_key=8wqf9mmnXHgAQr5Og1s7PjeyShYg8OGx')
         .then(response => response.json())
         .then(response => {
             console.log(response);
