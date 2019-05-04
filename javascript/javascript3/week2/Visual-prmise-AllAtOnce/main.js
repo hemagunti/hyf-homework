@@ -3,7 +3,7 @@ function translateAllAtOnce() {
     let promiseTwo = moveElement(document.querySelector('.marks > li:nth-child(2)'), {x: 400, y: 300});
     let promiseThree = moveElement(document.querySelector('.marks > li:nth-child(3)'), {x: 400, y: 20});
 
-    let myPromises = Promise.all([promiseOne(), promiseTwo(), promiseThree() ]);
+    let myPromises = Promise.all([promiseOne, promiseTwo, promiseThree]);
     
     myPromises 
       .then(() => {
