@@ -45,6 +45,7 @@ ul.targets li {
 }
 ul.targets li.fulfilled {
   box-shadow: green 0px 0px 25px;
+  background-color: green;
 }
 ul.targets li:nth-child(1) {
   top: 300px;
