@@ -23,7 +23,7 @@
         });
     }
 
-    randomizeStartPosition();
+    //randomizeStartPosition();
 
 
     const targets = document.querySelectorAll('ul.targets li');
