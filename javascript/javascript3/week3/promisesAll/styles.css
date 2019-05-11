@@ -1,0 +1,14 @@
+main {
+  background-color: rgb(8, 8, 8);
+  width: 75%;
+  margin: 0 auto;
+  padding: 10px;
+}
+main ul {
+  font-size: 1.2em;
+  list-style-type: none;
+}
+main ul li {
+  background-color: rgb(250, 248, 248);
+  margin-bottom: 10px;
+}
