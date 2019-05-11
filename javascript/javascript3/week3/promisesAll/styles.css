@@ -1,14 +1,20 @@
+body {
+  background-color: red;
+  box-sizing: border-box;
+  width: 100%;
+}
 main {
   background-color: rgb(8, 8, 8);
+  padding: 10px;
   width: 75%;
   margin: 0 auto;
-  padding: 10px;
+  overflow-wrap: break-word;
 }
 main ul {
   font-size: 1.2em;
   list-style-type: none;
+  background-color: rgb(250, 248, 248);
 }
 main ul li {
-  background-color: rgb(250, 248, 248);
   margin-bottom: 10px;
 }

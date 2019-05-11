@@ -23,7 +23,7 @@ console.log(longMovieTitle);
 countMoviesByYear = movies.filter(movie => movie.year >= 1980 && movie.year <= 1989);
 console.log("Movies made between 1980-1989 are" + " " + countMoviesByYear.length + " " + "movies");
 //4. Create new array with key tag.
-/*newKeyTag = movies.filter(movie => {
+newKeyTag = movies.filter(movie => {
     if(movie.rating >= 7)
     {
         return good;
@@ -36,7 +36,7 @@ console.log("Movies made between 1980-1989 are" + " " + countMoviesByYear.length
 
 })
 console.log(newKeyTag);
-movies.forEach(movie =>movie.rating = "good");*/
+movies.forEach(movie =>movie.rating = "good");
 let incList = movies.includes("Surfer");
 
 var createGood = movies.filter(function (movie) {
@@ -75,7 +75,7 @@ console.log(arraySplit);
 if(arraySplit != null)
   {
     arraySplit.forEach((elem) => {
-        result.push(elem[0]);   
+        result.push(elem);   
      })
         return result;
     }
@@ -91,4 +91,3 @@ let result = movies.reduce(function (sum, movie) {
 let avgRating = result / movies.length;
 console.log(avgRating);
 
-  //10. 

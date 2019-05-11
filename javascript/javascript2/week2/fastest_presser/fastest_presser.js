@@ -1,5 +1,6 @@
 let counterS = 0;
 let counterL = 0;
+var success = true;
 //1. create input and button 
 let button = document.getElementById("btn");
 //Get the value of the input when button is clicked
@@ -17,20 +18,26 @@ button.addEventListener("click", function () {
         if (countdown < 0) {
             clearInterval(x);
             document.getElementById("countdown").innerHTML = "TimeUP";
-        }
+           
+    
+    //button.removeEventListener('click', keypressed1);
+          }
     }, 1000);
     if (durationSec == null || durationSec == "") {
         alert("You must enter the field");
     }
     //Set timeout for the time specified by the user
-    setTimeout(function () {
+     setTimeout(function () {
         if (counterS > counterL) {
+            
             document.getElementById("user1").innerHTML = "User 1 won the game";
             var confettiSettings = { target: 'my-canvas-s' };
             var confetti = new ConfettiGenerator(confettiSettings);
             confetti.render();
+            
         } else if (counterS < counterL) {
             document.getElementById("user2").innerHTML = "User 2 won the game";
+            success = false;
             var confettiSettings = { target: 'my-canvas-l' };
             var confetti = new ConfettiGenerator(confettiSettings);
             confetti.render();} else {
@@ -40,7 +47,13 @@ button.addEventListener("click", function () {
     }, durationMilliSec);
 });
 //3. Create an event listener so you can call a function when any key is pressed.
+
+
+
+
 document.body.addEventListener('keypress', keyPressed);
+
+
 function keyPressed(event) {
     let keyCode = event.keyCode;
     //console.log(keyCode); To check the keyCode value
@@ -50,10 +63,12 @@ function keyPressed(event) {
     } else if (keyCode == 108) {
         counterL++;
         document.getElementById("counter2").innerHTML = counterL;
-    } else {
-        alert("Press S or L key");
-    }
+    } 
+    //else 
+     //   alert("Press S or L key");
 
+    //}
+    
 }
 
 
