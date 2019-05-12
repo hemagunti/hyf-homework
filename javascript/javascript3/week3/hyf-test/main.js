@@ -38,6 +38,12 @@ fetch("https://reqres.in/api/users")
     console.log(res.data[0].first_name);
     console.log(res.data[1].first_name);
     console.log(res.data[2].first_name);
+
+    let h2 = document.createElement("h2");
+    div.appendChild(h2);
+    h2.innerHTML = res.data[0].first_name;
+    h2.innerHTML = res.data[1].first_name;
+    h2.innerHTML = res.data[2].first_name;
     //let result = res.filter(users => user.first_name);
     /*for (let i = 0; i < res.data.length; i++) {
       let userNames = document.createElement("div");
