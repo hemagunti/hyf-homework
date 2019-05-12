@@ -1,0 +1,13 @@
+.container {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #ddd;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.2em;
+}
+header {
+  color: rgb(16, 16, 121);
+}
