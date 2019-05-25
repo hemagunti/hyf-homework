@@ -35,7 +35,7 @@ class Quiz {
         question.options.forEach(option => {
           options += `<option data-is-answer="${option.correct}" value="${
             option.content
-          }">${option.content.replace(/ *\([^)]*\) */g, "")}</option>`;
+          }">${option.content.replace(/ *\([^)]*\) */ /g, "")}</option>`;
         });
 
         return openSelect + options + closeSelect;
@@ -68,3 +68,5 @@ quiz.getQuestions().then(data => {
 document.querySelector("button").addEventListener("click", function() {
   alert("Your score is " + quiz.calculateScore());
 });
+
+
