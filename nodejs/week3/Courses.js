@@ -27,6 +27,20 @@ class Courses {
     });
     return this.coursesList;
   }
+
+  getCourseByName(name) {
+    return {
+      name: name,
+      duration: 3
+    };
+  }
+
+  addCourse(course) {
+    if (course.name.length > 1) {
+      this.coursesList.push(course);
+      return true;
+    } else return false;
+  }
 }
 
 /*const fs = require("fs");

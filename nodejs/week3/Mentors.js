@@ -27,6 +27,12 @@ class Mentors {
     });
     return mentorsName;
   }
+  addMentor(mentor) {
+    if (course.name.length > 1) {
+      this.mentorsList.push(mentor);
+      return true;
+    } else return false;
+  }
 }
 /*const fs = require("fs");
 

@@ -1,18 +1,128 @@
-const express = require("express"); //function
+const http = require("http");
+//const express = require("express"); //function
 //console.log(express);
-const app = express();
+/*const app = express();
 app.use(express.json()); // for parsing application/json
 
-const cors = require("cors");
-app.use(cors());
+/*const cors = require("cors");
+app.use(cors());*/
 
 const Mentors = require("./Mentors.js");
-const Courses = require("./Courses.js");
+const Courses = require("./Courses");
 
 const hyf_mentors = new Mentors("./mentors.json");
-const hyf_courses = new Courses("./courses.json");
+const hyf_courses = new Courses();
+
+const bodyParser = require("body-parser");
+
+const express = require("express");
+const app = express();
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+const router = express.Router();
+//routes for courses
+app.get("/", (req, res) => {
+  res.send("welcome to hyf course app using express");
+});
+router
+  .route("/courses")
+  .get((req, res, next) => {
+    if (req.query.name) {
+      res.send(hyf_courses.getCourseByName(req.query.name));
+    } else {
+      res.send(hyf_courses.getList());
+    }
+  })
+  .post((req, res) => {
+    if (hyf_courses.addCourse(req.body)) {
+      res.status(201);
+      res.send("course added");
+    } else {
+      res.status(500);
+      res.send("fail to add");
+    }
+  });
+app.delete("/course/:name", (req, res) => {
+  res.send(`course deleted ${req.params.name}`);
+});
+
+/*app.get("/", (req, res) => {
+  res.send("welcome to hyf course app using express");
+});
+app.get("/courses", (req, res) => {
+  const result = hyf_courses.getList();
+  res.send(result);
+});
+app.get("/course/:name", (req, res) => {
+  res.send(hyf_courses.getCourseByName(req.params.name));
+});
+
+app.post("/courses", (req, res) => {
+  if (hyf_courses.addCourse(req.body)) {
+    res.status(201);
+    res.send("course added");
+  } else {
+    res.status(400);
+    res.send("fail to add");
+  }
+});*/
+
+//router for mentors
+app.get("/", (req, res) => {
+  res.send("welcome to hyf mentors app using express");
+});
+router
+  .route("./mentors")
+  .get((req, res) => {
+    res.send(hyf_mentors.getList());
+  })
+  .post((req, res) => {
+    if (hyf_mentors.addMentor(req.body)) {
+      res.status(201);
+      res.send("mentor added");
+    } else {
+      res.status(400);
+      res.send("fail to add");
+    }
+  });
+app.delete("/mentor/:name", (req, res) => {
+  res.send(`mentor deleted ${req.params.name}`);
+});
+
+/*app.get("/mentors", (req, res) => {
+  const result = hyf_mentors.getList();
+  res.send(result);
+});
+app.get("/mentor/:name", (req, res) => {
+  res.send(hyf_mentors.getMentorsByCourseTitle(req.params.name));
+});
+
+app.post("/mentors", (req, res) => {
+  if (hyf_mentors.addMentor(req.body)) {
+    res.status(201);
+    res.send("mentor added");
+  } else {
+    res.status(400);
+    res.send("fail to add");
+  }
+});*/
+
+app.use("/api", router);
+/*const server = http.createServer((req, res) => {
+  const url = req.url;
+
+  if (url == "/") {
+    res.end("welcome to hyf course");
+  } else if (url == "/getList" && req.method == "GET") {
+    const result = hyf_courses.getList();
+    res.end(JSON.stringify(result));
+  } else if (url == "/getList" && req.param("name") && req.method == "GET") {
+    const result = hyf_courses.getList();
+    res.end("course");
+  }
+});*/
 //console.log(hyf_mentors.getAllMentors());
-console.log(hyf_courses.getList());
+//console.log(hyf_courses.getList());
 //console.log(hyf_mentors.getAllMentors());
 
 /*//1.a) GET /numbers/add?first=<number here>&second=<number here>. In response send sum (first + second).
@@ -81,6 +191,9 @@ and use middleware `express.json()` to read `req.body`.*/
 });*/
 
 // creates the Node.js server at the specified host and port
-let server = app.listen(3000, function() {
+/*let server = app.listen(3000, function() {
   console.log("server is running");
+});*/
+app.listen(3000, () => {
+  console.log("hyf app is running");
 });
