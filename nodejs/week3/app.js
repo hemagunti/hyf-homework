@@ -66,5 +66,5 @@ app.delete("/mentor/:name", (req, res) => {
 app.use("/api", router);
 
 app.listen(3000, () => {
-  console.log("hyf app is running");
+  console.log("hyf app is running at 3000");
 });
