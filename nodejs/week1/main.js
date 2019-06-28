@@ -62,7 +62,7 @@ class Mentors {
   }
 }
 //create new mentor instance
-const hyf_mentors = new Mentors();
+/*const hyf_mentors = new Mentors();
 const newMentor = {
   name: "Marta",
   courses: ["Git", "Database"]
@@ -70,4 +70,4 @@ const newMentor = {
 hyf_mentors.getMentorsList();
 //hyf_mentors.editMentor(mentor);
 hyf_mentors.deleteMentor("Marco");
-hyf_mentors.getMentorsList();
+hyf_mentors.getMentorsList();*/
