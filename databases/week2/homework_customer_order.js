@@ -66,6 +66,20 @@ insert into orders (order_id, order_date, amount) values (1, 2-5-19, 1000);
 insert into orders (order_id, order_date, amount) values (2, 3-5-19, 2000);
 insert into orders (order_id, order_date, amount) values (3, 4-5-19, 3000);
 insert into orders (order_id, order_date, amount) values (4, 5-5-19, 4000);
+
+/*READ */
 SELECT * FROM ORDERS;
 
-/* INSERT INTO */
+/* UPDATE  */
+UPDATE
+`customer`
+SET
+`customer_name` = 'Sunil'
+WHERE
+`customer_id` = 1;
+
+/* DELETE */
+DELETE FROM
+`orders`
+WHERE
+`order_id` = 2;
